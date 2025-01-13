@@ -1,7 +1,7 @@
 # personal_projects
 I have no idea how to use github
 
-# Simple GitHub Glossary
+## Simple GitHub Glossary
 
 - **Push**: Send your changes to GitHub.
 - **Pull**: Get the latest changes from GitHub.
