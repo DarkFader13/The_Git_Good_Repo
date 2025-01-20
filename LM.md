@@ -36,3 +36,16 @@ with open("your_file.md", "r") as f:
 
 - Open `.ipynb` files directly in VSCode to run cells interactively.
 - Run the notebook to fine-tune models in real-time, track progress, and view results.
+
+## 4. Key Libraries for Language Model Training in Python
+
+**Libraries:**
+
+- `transformers`: For loading and fine-tuning pre-trained models (e.g., GPT-2).
+- `datasets`: For loading and processing datasets in a format suitable for model training.
+- `torch`: For model training using deep learning frameworks (PyTorch).
+- `jupyter`: To run code in interactive Jupyter Notebooks.
+
+**Optional Libraries:**
+
+- `gitpython`: For automating tasks like pushing model changes to GitHub repositories (if needed).
