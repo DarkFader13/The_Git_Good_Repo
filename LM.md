@@ -1,21 +1,26 @@
 ## 1. VSCode and GitHub Codespaces Setup
 
-**VSCode Setup:**
-
-- **Install Extensions:**
-  - Install the Jupyter extension for interactive notebooks.
-  - Ensure Python is installed.
-
-- **Install Libraries:**
-  - Run the following command to install required libraries:
-    ```bash
-    pip install jupyter transformers datasets torch
-    ```
-
 **Working in GitHub Codespaces:**
 
 - Use GitHub Codespaces for development, training, and fine-tuning models.
 - No local saves—models are uploaded directly to GitHub Releases.
+
+**VSCode Setup:**
+
+- **Install Extensions to VSCode:**
+  - Install the Jupyter extension for interactive notebooks
+  - Ensure Python is installed locally.
+  - Connect to a configured GitHub Codespace 
+
+- **Install Libraries:**
+  - Run the following command to install required libraries:
+    ```bash
+    pip install jupyter transformers datasets torch markdowm
+    ```
+  - Run the follwong to check libraries
+    ```bash
+    python -c "import torch; import transformers; print ('Setup complete')"
+    ```
 
 ## 2. Markdown Training Data
 

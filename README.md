@@ -13,3 +13,8 @@ I have no idea how to use github
 - **Merge**: Combine two versions (branches) into one.
 - **Fork**: Copy someone’s project to work on it.
 - **Pull Request (PR)**: Ask to add your changes to someone else’s project.
+
+## Simple Terminal Glossary
+
+- **pip install**: installs python packages to the current environment / codespace the terminal is in
+- **python -c""**: excutes python script (within quotes) directly from terminal without needed a file script
