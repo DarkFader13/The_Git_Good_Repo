@@ -72,4 +72,9 @@ with open("your_file.md", "r") as f:
 3. **Access Model Later:**
    - The model is available for download from the release page. You can either manually download the model or use it in future projects by referencing the release URL.
 
+## 6. Conclusion
 
+- VSCode and GitHub Codespaces are your primary tools for development, training, and interacting with models using Jupyter Notebooks.
+- Use the `transformers`, `datasets`, `torch`, and `jupyter` libraries for efficient model training.
+- Markdown data can be converted and processed for use as training data.
+- No local saves are needed—save the trained model directly to GitHub Releases for easy access and sharing.
