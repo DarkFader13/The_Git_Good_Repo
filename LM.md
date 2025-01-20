@@ -19,7 +19,8 @@
     ```
   - Run the follwong to check libraries
     ```bash
-    python -c "import torch; import transformers; print ('Setup complete')"
+    python -c "import jupyter; import transformers; import datasets; import torch; import markdown; print('Jupyter version:', jupyter.__version__); print('Transformers version:', transformers.__version__); print('Datasets version:', datasets.__version__); print('Torch version:', torch.__version__); print('Markdown version:', markdown.__version__)"
+"
     ```
 
 ## 2. Markdown Training Data
