@@ -49,3 +49,27 @@ with open("your_file.md", "r") as f:
 **Optional Libraries:**
 
 - `gitpython`: For automating tasks like pushing model changes to GitHub repositories (if needed).
+
+## 5. Saving Model to GitHub Releases (No Local Save)
+
+**GitHub Releases Overview:**
+
+- Use GitHub Releases to save large files (e.g., your trained model) directly to your repository as artifacts.
+
+**Steps to Save Model to GitHub Releases:**
+
+1. **Create a Release:**
+   - In your GitHub repository, navigate to the Releases tab.
+   - Click "Draft a new release" and add your model files.
+
+2. **Upload Model to Release:**
+   - Upload model files (e.g., `.bin`, `.json`) using GitHub UI or GitHub CLI.
+   - Example with GitHub CLI:
+     ```bash
+     gh release create v1.0 ./path/to/model/files/*
+     ```
+
+3. **Access Model Later:**
+   - The model is available for download from the release page. You can either manually download the model or use it in future projects by referencing the release URL.
+
+
