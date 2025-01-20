@@ -1,4 +1,4 @@
-###### 1. VSCode and GitHub Codespaces Setup
+## 1. VSCode and GitHub Codespaces Setup
 
 **VSCode Setup:**
 
@@ -16,3 +16,4 @@
 
 - Use GitHub Codespaces for development, training, and fine-tuning models.
 - No local saves—models are uploaded directly to GitHub Releases.
+
