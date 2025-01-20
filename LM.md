@@ -15,11 +15,11 @@
 - **Install Libraries:**
   - Run the following command to install required libraries:
     ```bash
-    pip install jupyter transformers datasets torch markdowm
+    pip install jupyter transformers datasets torch markdown
     ```
   - Run the follwong to check libraries
     ```bash
-    python -c "import jupyter; import transformers; import datasets; import torch; import markdown; print('Jupyter version:', jupyter.__version__); print('Transformers version:', transformers.__version__); print('Datasets version:', datasets.__version__); print('Torch version:', torch.__version__); print('Markdown version:', markdown.__version__)"
+    python -c "import notebook; import transformers; import datasets; import torch; import markdown; print('Jupyter notebook version:', notebook.__version__); print('Transformers version:', transformers.__version__); print('Datasets version:', datasets.__version__); print('Torch version:', torch.__version__); print('Markdown version:', markdown.__version__)"
     ```
 
 ## 2. Markdown Training Data
@@ -27,13 +27,28 @@
 **Processing Markdown:**
 
 - Use the markdown library to convert Markdown files into plain text for training data.
+- You can directly copy paste the file path from the explorer
+- Create a python script
 
 **Example to convert Markdown:**
+
+- How to read in a markdown file as text
 ```python
 import markdown
-with open("your_file.md", "r") as f:
+with open("Datasets/Risk_Management/Operational Risk.md", "r") as f:
     html = markdown.markdown(f.read())
 ```
+- How to sample line of text from file
+```python
+#Open a Markdown and and read its content
+with open("Datasets/Risk_Management/Operational Risk.md", "r") as f:
+    lines = f.readlines()
+
+#Print the first 5 lines
+for line in lines [:5]:
+  print(line.strip()) # .strip() to remove leading/trailing whitespace or new line
+```
+
 
 ## 3. Jupyter Notebooks Setup
 
@@ -50,6 +65,7 @@ with open("your_file.md", "r") as f:
 - `datasets`: For loading and processing datasets in a format suitable for model training.
 - `torch`: For model training using deep learning frameworks (PyTorch).
 - `jupyter`: To run code in interactive Jupyter Notebooks.
+- `markdown`: To parse markdown files to plain text.
 
 **Optional Libraries:**
 

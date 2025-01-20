@@ -17,4 +17,4 @@ I have no idea how to use github
 ## Simple Terminal Glossary
 
 - **pip install**: installs python packages to the current environment / codespace the terminal is in
-- **python -c""**: excutes python script (within quotes) directly from terminal without needed a file script
+- **python -c""**: excutes a single lined of python script (within quotes) directly from terminal without needed a file script
