@@ -28,3 +28,11 @@
 import markdown
 with open("your_file.md", "r") as f:
     html = markdown.markdown(f.read())
+```
+
+## 3. Jupyter Notebooks Setup
+
+**VSCode Jupyter Notebooks:**
+
+- Open `.ipynb` files directly in VSCode to run cells interactively.
+- Run the notebook to fine-tune models in real-time, track progress, and view results.
