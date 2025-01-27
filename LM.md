@@ -17,10 +17,11 @@
     ```bash
     pip install jupyter transformers datasets torch markdown
     ```
-  - Run the follwong to check libraries
+  - Run the following to check libraries and save dependencies 
     ```bash
-    python -c "import notebook; import transformers; import datasets; import torch; import markdown; print('Jupyter notebook version:', notebook.__version__); print('Transformers version:', transformers.__version__); print('Datasets version:', datasets.__version__); print('Torch version:', torch.__version__); print('Markdown version:', markdown.__version__)"
+    python -c "import notebook; import transformers; import datasets; import torch; import markdown; output = f'Jupyter notebook version: {notebook.__version__}\nTransformers version: {transformers.__version__}\nDatasets version: {datasets.__version__}\nTorch version: {torch.__version__}\nMarkdown version: {markdown.__version__}'; open('dependency_versions.txt', 'w').write(output)"
     ```
+
 
 ## 2. Markdown Training Data
 
