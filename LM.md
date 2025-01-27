@@ -81,16 +81,36 @@ for line in lines [:5]:
 
 1. **Create a Release:**
    - In your GitHub repository, navigate to the Releases tab.
-   - Click "Draft a new release" and add your model files.
+   - Click "Draft a new release"
+    -Tag version, add description, attach files etc.
+   - Install GitHub CLI in Codespace
+   ```bash
+   sudo apt update && sudo apt install gh
+   ```
 
-2. **Upload Model to Release:**
+2. **Authenticate GitHub CLI: (optional)**
+    - If the COdespace is not using an enviroment vairable for authentication
+    - Create peronal access token
+      - Github.com -> Settings -> Developer Settings -> Personal Access Tokens -> Tokens (classic) -> Generate new token -> Generate new token (classic) 
+      - Add a note
+      - Set expiration to 30 days
+      - Select scopes repo, workflow, write:packages
+      ```bash
+      gh auth login --with--token < $GITHUB_TOKEN
+      ```
+
+3. **Upload Model to Release:**
+   - Save to files in repository
    - Upload model files (e.g., `.bin`, `.json`) using GitHub UI or GitHub CLI.
    - Example with GitHub CLI:
      ```bash
-     gh release create v1.0 ./path/to/model/files/*
+     cd jupyter_notebook_models
+     ```
+     ```bash
+     gh release create mkv1 ./jupyter_notebook_models/* --repo DarkFader13/The_Git_Good_Repo
      ```
 
-3. **Access Model Later:**
+4. **Access Model Later:**
    - The model is available for download from the release page. You can either manually download the model or use it in future projects by referencing the release URL.
 
 ## 6. Conclusion
