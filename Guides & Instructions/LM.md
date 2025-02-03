@@ -50,6 +50,9 @@ from transformers import GPT2Tokenizer
 
 # Load the GPT-2 tokenizer
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+# Set the tokenizer's pad token to the EOS token
+tokenizer.pad_token = tokenizer.eos_token
+
 
 # Tokenize the text data
 def tokenize_texts(texts):

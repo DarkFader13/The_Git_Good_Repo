@@ -21,6 +21,7 @@
     ```bash
     python -c "import notebook; import transformers; import datasets; import torch; import markdown; output = f'Jupyter notebook version=={notebook.__version__}\nTransformers version=={transformers.__version__}\nDatasets version=={datasets.__version__}\nTorch version=={torch.__version__}\nMarkdown version=={markdown.__version__}'; open('dependency_versions.txt', 'w').write(output)"
     ```
+- **Check Libraries:**
   - Re-install dependencies
     ```bash
     pip install -r dependency_versions.txt
