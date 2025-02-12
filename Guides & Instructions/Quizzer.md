@@ -63,8 +63,10 @@ Here’s the script:
 ```python
 # generate_qa.py
 import subprocess
+import csv
+import os
 
-def generate_qa(markdown_file, num_questions, focus_topic):
+def generate_qa(markdown_file, num_questions, focus_topic, output_folder):
     # Read the Markdown file
     with open(markdown_file, "r") as file:
         notes = file.read()
@@ -72,7 +74,10 @@ def generate_qa(markdown_file, num_questions, focus_topic):
     # Prepare the prompt for Mistral 7B
     prompt = (
         f"Generate {num_questions} questions and answers based on the following notes. "
-        f"Focus the questions on the topic of '{focus_topic}'. Here are the notes:\n\n{notes}"
+        f"Focus the questions on the topic of '{focus_topic}'. "
+        "Each question should be a maximum of 2 sentences, and each answer should be less than 50 words. "
+        "Format the output as a list of questions and answers, with each pair separated by a newline. "
+        "Here are the notes:\n\n{notes}"
     )
 
     # Run Ollama with Mistral 7B to generate Q&A
@@ -82,10 +87,22 @@ def generate_qa(markdown_file, num_questions, focus_topic):
         text=True
     )
 
-    # Save the output to a file
-    output_file = f"qa_output_{focus_topic.replace(' ', '_')}.md"
-    with open(output_file, "w") as output_file:
-        output_file.write(result.stdout)
+    # Parse the output into questions and answers
+    qa_pairs = []
+    output_lines = result.stdout.split("\n")
+    for i in range(0, len(output_lines) - 1, 2):
+        question = output_lines[i].strip()
+        answer = output_lines[i + 1].strip() if i + 1 < len(output_lines) else ""
+        qa_pairs.append((question, answer))
+
+    # Save the Q&A pairs to a CSV file
+    os.makedirs(output_folder, exist_ok=True)  # Create the output folder if it doesn't exist
+    output_file = os.path.join(output_folder, f"qa_output_{focus_topic.replace(' ', '_')}.csv")
+    
+    with open(output_file, "w", newline="") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["Question", "Answer"])  # Write header
+        writer.writerows(qa_pairs)  # Write Q&A pairs
 
     print(f"Q&A generated and saved to {output_file}")
 
@@ -94,9 +111,10 @@ if __name__ == "__main__":
     markdown_file = input("Enter the path to your Markdown file (e.g., notes.md): ")
     num_questions = input("Enter the number of questions to generate: ")
     focus_topic = input("Enter the topic to focus on for the questions: ")
+    output_folder = input("Enter the folder to save the output CSV file (e.g., output): ")
 
     # Generate Q&A
-    generate_qa(markdown_file, int(num_questions), focus_topic)
+    generate_qa(markdown_file, int(num_questions), focus_topic, output_folder)
 ```
 
 ---
