@@ -3,7 +3,7 @@
 **Working in GitHub Codespaces:**
 
 - Use GitHub Codespaces for development, training, and fine-tuning models.
-- No local saves—models are uploaded directly to GitHub Releases.
+- No local saves—models are uploaded directly to GitHub Releases. 
 
 **VSCode Setup:**
 
