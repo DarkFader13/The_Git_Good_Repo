@@ -18,3 +18,7 @@ I have no idea how to use github
 
 - **pip install**: installs python packages to the current environment / codespace the terminal is in
 - **python -c""**: excutes a single lined of python script (within quotes) directly from terminal without needed a file script
+- 
+**git fetch origin**
+**git reset --hard origin/main**
+**git clean -fd** : how to reset back to origin/main
