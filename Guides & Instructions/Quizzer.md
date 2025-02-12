@@ -66,6 +66,19 @@ import subprocess
 import csv
 import os
 
+def start_ollama():
+    """Start the Ollama server."""
+    print("Starting Ollama server...")
+    ollama_process = subprocess.Popen(["ollama", "serve"])
+    time.sleep(5)  # Wait for the server to start
+    return ollama_process
+
+def kill_ollama(ollama_process):
+    """Kill the Ollama server."""
+    print("Stopping Ollama server...")
+    ollama_process.terminate()
+    ollama_process.wait()
+
 def generate_qa(markdown_file, num_questions, focus_topic, output_folder):
     # Read the Markdown file
     with open(markdown_file, "r") as file:
