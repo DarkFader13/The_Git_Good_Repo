@@ -18,6 +18,10 @@ I have no idea how to use github
 
 - **pip install**: installs python packages to the current environment / codespace the terminal is in
 - **python -c""**: excutes a single lined of python script (within quotes) directly from terminal without needed a file script
+- **git gc**: cleans up / prunes unnecessary objects from storage put into trash
+- **git gc --prune=now**: empty trash
+- **du -h -d 1 | sort -hr**: checks file size on top directories
+- **find . -type f -exec du -h {} + | sort -hr | head -n 10**: finds largest file objectsapt-get
 - 
 **git fetch origin**
 **git reset --hard origin/main**

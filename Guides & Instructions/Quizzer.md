@@ -11,8 +11,8 @@ This guide will walk you through setting up GitHub Codespaces, installing Ollama
 ## Step 1: Check System Resources
 Ensure your GitHub Codespace meets the minimum requirements:
 - **4 CPU cores**
-- **16GB RAM**
-- **32GB storage**
+- **8GB RAM**
+- **10GB storage**
 
 Run the following commands to check system resources:
 ```bash
@@ -34,7 +34,10 @@ Ollama is a lightweight tool for running AI models. Install it using the followi
 # Download and install Ollama
 curl -fsSL https://ollama.ai/install.sh | sh
 
-# Verify installation
+#Run ollama
+ollama serve
+
+# Verify installation in a new terminal
 ollama --version
 ```
 
@@ -153,3 +156,4 @@ The API server will run on `http://localhost:11434`. You can interact with it us
 ---
 
 This version of the guide assumes your Markdown file is already in the Codespace, making it simpler and more direct. Let me know if you need further adjustments!
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJFHvdwnkkKja74hp6MWfkhrtRXb/qbiJppl6VscWlg4
