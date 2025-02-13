@@ -9,8 +9,13 @@ import signal
 def start_ollama():
     """Start the Ollama server."""
     print("Starting Ollama server...")
-    ollama_process = subprocess.Popen(["ollama", "serve"])
+    ollama_process = subprocess.Popen(
+        ["ollama", "serve"],
+        stdout=subprocess.DEVNULL, #suppress standard output
+        stderr=subprocess.DEVNULL #supress standard error
+        )
     time.sleep(5)  # Wait for the server to start
+    print("THE LLAMA IS RUNNING")
     return ollama_process
 
 def kill_ollama(ollama_process):
