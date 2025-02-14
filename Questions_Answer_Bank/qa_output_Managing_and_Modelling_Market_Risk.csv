@@ -1,0 +1,31 @@
+Question,Answer
+What is market risk?,Market risk refers to the risk that financial instruments' prices will fluctuate due to changes in market conditions.
+What are the types of market risk?,"The types of market risk include market price risk, foreign exchange risk, and interest rate risk."
+What is market price risk?,Market price risk refers to the possibility that the value of a financial instrument will decrease due to changes in its market price.
+What is foreign exchange risk?,"Foreign exchange risk, also known as currency risk, is the potential for loss due to changes in the value of one currency relative to another."
+What is interest rate risk?,Interest rate risk refers to the possibility that a financial instrument's cash flows will be affected by changes in interest rates.
+How can market risk be managed?,"Market risk can be managed through diversification, hedging, and limiting exposure to volatile markets."
+What is diversification in the context of market risk?,Diversification refers to spreading investments across various assets or markets to reduce overall risk.
+What is hedging in the context of market risk?,Hedging involves taking an opposite position in a related security to offset potential losses from adverse price movements.
+What is limiting exposure to volatile markets?,Limiting exposure to volatile markets means reducing the amount of assets allocated to these markets to minimize potential losses.
+What is Value at Risk (VaR)?,VaR is a statistical measure that estimates the maximum loss that could be expected over a given time period with a specified level of confidence.
+How is VaR calculated?,"VaR is calculated by estimating the standard deviation of returns and multiplying it by a certain number of standard deviations, usually 2 or 3."
+What is Conditional Value at Risk (CVaR)?,"CVaR, also known as Expected Shortfall, is an extension of VaR that provides an estimate of the average loss beyond the VaR threshold."
+How is CVaR calculated?,CVaR is calculated by taking the expected value of losses exceeding the VaR threshold.
+What is stress testing in market risk management?,Stress testing is a risk assessment technique that tests a financial institution's ability to withstand extreme but plausible adverse scenarios.
+How is stress testing performed?,Stress testing is performed by subjecting a financial model to various hypothetical scenarios and observing the impact on risk exposures and capital requirements.
+What are backtesting and validation in market risk modeling?,"Backtesting involves evaluating the performance of a risk model using historical data, while validation ensures that the model is accurate, consistent, and robust."
+How can model risk be managed?,"Model risk can be managed through regular calibration, validation, and backtesting, as well as ensuring transparency in model assumptions and limitations."
+What are model risk and its impact on market risk management?,"Model risk refers to the potential for errors or biases in models used for market risk management, which can lead to incorrect risk assessments and poor decision-making."
+What is Value at Risk Sensitivity (VaRS)?,VaRS measures how much a change in model parameters will affect the VaR estimate.
+How is VaRS calculated?,VaRS is calculated by taking partial derivatives of VaR with respect to the model parameters and evaluating them at their current values.
+What is Expected Shortfall Sensitivity (ES-Sensitivity)?,ES-Sensitivity measures how much a change in model parameters will affect the CVaR estimate.
+How is ES-Sensitivity calculated?,ES-Sensitivity is calculated by taking partial derivatives of CVaR with respect to the model parameters and evaluating them at their current values.
+What is Scenario Analysis in market risk management?,Scenario Analysis is a technique that assesses the potential impact of specific adverse events on a financial institution's risk exposures and capital requirements.
+How is Scenario Analysis performed?,"Scenario Analysis is performed by defining plausible adverse events, estimating their impacts on various risk factors, and assessing the overall effect on the financial institution."
+What is Monte Carlo Simulation in market risk modeling?,Monte Carlo Simulation is a numerical method that uses random sampling to analyze the uncertainty in a system's behavior.
+How is Monte Carlo Simulation used in market risk management?,"Monte Carlo Simulation can be used to estimate VaR, CVaR, and other risk measures under various scenarios, helping to assess potential losses more accurately."
+What is a Risk Management Framework in market risk management?,"A Risk Management Framework outlines the processes, systems, and controls that a financial institution follows to identify, evaluate, and manage market risks effectively."
+How does a Risk Management Framework help in market risk management?,"A Risk Management Framework helps ensure consistency, transparency, and effectiveness in market risk identification, assessment, and management across an organization."
+What are Key Risk Indicators (KRIs) in market risk management?,KRIs are quantitative or qualitative measures used to monitor the levels of specific risks within a financial institution.
+How can KRIs help in market risk management?,"KRIs help financial institutions identify potential risks early, allowing them to take corrective action and maintain their overall risk profile within acceptable limits."

@@ -49,6 +49,8 @@ def generate_qa(markdown_file, num_questions, focus_topic, output_folder):
     result.stdout = result.stdout.replace("\n\n", "\n")
     result.stdout = result.stdout.replace("Question: ", "")
     result.stdout = result.stdout.replace("Answer: ", "")
+    result.stdout = result.stdout.replace("Q: ", "")
+    result.stdout = result.stdout.replace("A: ", "")
 
     # Parse the output into questions and answers
     qa_pairs = []

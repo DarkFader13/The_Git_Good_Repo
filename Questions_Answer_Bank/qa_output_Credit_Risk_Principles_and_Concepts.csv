@@ -1,0 +1,31 @@
+Question,Answer
+What is Credit Risk?,Credit Risk is the possibility that a borrower will default on their financial obligations.
+What is Counterparty Risk?,Counterparty Risk refers to the potential loss due to the inability of a trading partner to fulfill its contractual obligations.
+What is Probable Default Probability (PD)?,PD is an estimation of the likelihood that a borrower will default on their debt within a specific timeframe.
+What is Expected Loss (EL)?,"EL is the sum of all probable losses due to default events multiplied by the PD, over the remaining life of the exposure."
+What is Loss Given Default (LGD)?,LGD is the amount an institution would lose if a counterparty defaults on its obligations.
+What is Specific Risk?,Specific Risk pertains to the credit risk associated with individual borrowers or securities.
+What is Systemic Risk?,Systemic Risk refers to the potential failure of an entire financial system due to the failure or near-failure of a key institution.
+What is Credit Migration Risk?,"Credit Migration Risk involves the possibility that a borrower's creditworthiness will deteriorate over time, increasing the likelihood of default."
+What is Credit Spread?,Credit Spread is the difference in yield between a risky bond and a risk-free bond of similar maturity.
+What is Credit Scoring Model?,A Credit Scoring Model is a statistical method used to assess the creditworthiness of potential borrowers.
+What is Credit Risk Assessment?,Credit Risk Assessment is the process of evaluating the likelihood that a borrower will default on their debt.
+What is Collateral Management?,"Collateral Management involves the monitoring, valuation, and control of assets used as security for loans or other financial obligations."
+What is Credit Facility?,A Credit Facility is a pre-arranged line of credit available to borrowers under certain conditions.
+What is Credit Limits?,Credit Limits define the maximum amount that can be borrowed at any given time.
+What is Credit Line Probability of Default (PD)?,The PD for a credit line is an estimation of the likelihood that the borrower will default on their obligations under the credit facility.
+What is Credit Risk Mitigation?,"Credit Risk Mitigation involves strategies to reduce or transfer credit risk, such as collateralization and insurance."
+What is Overcollateralization?,Overcollateralization occurs when the value of the collateral exceeds the amount borrowed.
+What is Underwriting Risk?,Underwriting Risk refers to the potential losses due to misjudging a borrower's creditworthiness during the loan application process.
+What is Credit Enhancement?,"Credit Enhancement involves actions taken to improve the credit quality of an asset or obligation, such as adding a guarantee or purchasing insurance."
+What is Securitization?,Securitization is the process of pooling assets and issuing securities backed by those assets.
+What is Structured Finance?,Structured Finance involves creating complex financial instruments to fund specific assets or projects.
+What is Mezzanine Debt?,Mezzanine Debt is a type of subordinated debt that provides financing for a company with the potential for higher returns but also greater risk.
+What is Asset-Backed Security (ABS)?,"An ABS is a financial instrument backed by a pool of assets, such as loans or leases."
+What is Credit Default Swap (CDS)?,A CDS is a contract between two parties where the seller agrees to compensate the buyer in case the borrower defaults on its debt obligations.
+What is Credit Risk Analysis?,"Credit Risk Analysis involves evaluating the potential credit risk of an obligation or counterparty by assessing factors such as financial stability, creditworthiness, and industry trends."
+What is Credit Rating Agency (CRA)?,A CRA is a third-party organization that assigns credit ratings to debt instruments based on their credit quality.
+What is Sovereign Credit Risk?,Sovereign Credit Risk refers to the credit risk associated with a government's ability to repay its debts.
+What is Credit Portfolio Management?,Credit Portfolio Management involves managing a collection of credit exposures to optimize risk and return.
+What is Risk-Adjusted Return on Capital (RAROC)?,RAROC is a performance measurement that takes into account the risk associated with an investment.
+What is Credit VaR?,Credit VaR is a measure of the potential loss in value of a credit portfolio due to changes in market conditions over a specified timeframe.

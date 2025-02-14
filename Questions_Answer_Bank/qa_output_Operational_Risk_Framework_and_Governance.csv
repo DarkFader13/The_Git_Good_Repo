@@ -1,0 +1,31 @@
+Question,Answer
+What is Operational Risk Framework?,"It is a structured approach to identify, assess, and manage operational risks in an organization."
+What is the purpose of Operational Risk Governance?,"The purpose is to ensure that operational risk is managed effectively across an organization, in line with business objectives."
+What are the key components of an Operational Risk Framework?,"Key components include risk identification, risk assessment, risk mitigation, and ongoing monitoring."
+What is Risk Identification in Operational Risk Management?,It is the process of identifying potential sources of operational risks within an organization.
+What is Risk Assessment in Operational Risk Management?,It is the process of evaluating the impact and likelihood of identified operational risks.
+What is Risk Mitigation in Operational Risk Management?,It is the process of implementing controls to reduce the risk to an acceptable level.
+What is Ongoing Monitoring in Operational Risk Management?,It is the ongoing process of monitoring risks and the effectiveness of risk mitigation strategies.
+What is the role of Senior Management in Operational Risk Governance?,"The role is to provide strategic direction, oversight, and accountability for operational risk management within an organization."
+What is the role of Board of Directors in Operational Risk Governance?,The role is to set the overall risk appetite and ensure that operational risk is managed effectively.
+"What is the difference between Operational Risk and other types of risks (e.g., Credit, Market)?","Operational Risk is the risk of loss resulting from inadequate or failed internal processes, people, and systems, or from external events. Other risks are related to specific areas like creditworthiness of counterparties or market fluctuations."
+What is a Key Risk Indicator (KRI)?,A KRI is a measurable variable that helps monitor and assess the level and trend of an operational risk.
+What is a Risk Appetite Statement?,It is a statement that defines the level of risk that an organization is willing to accept in pursuit of its strategic objectives.
+What is a Risk Tolerance Level?,It is the maximum acceptable level of risk within a defined period.
+What is a Risk Limit?,It is a predefined threshold beyond which a specific risk must not exceed.
+What is a Risk Event?,"It is an event or series of events that could have an adverse impact on an organization's operations, such as system failures or fraudulent activities."
+What is the importance of Scenario Analysis in Operational Risk Management?,Scenario analysis helps to identify potential risks and assess their impact under different scenarios.
+What is the purpose of a Root Cause Analysis (RCA)?,"The purpose is to identify the underlying cause(s) of an operational risk event, in order to prevent its recurrence."
+What is the role of Training and Awareness Programs in Operational Risk Management?,They are designed to ensure that employees understand their roles and responsibilities in managing operational risks.
+What is the role of a Control Self-Assessment (CSA)?,It is a process where employees assess the effectiveness of controls within their areas of responsibility.
+What is the purpose of a Risk Reporting Mechanism?,"The purpose is to provide senior management and the board with regular updates on operational risks, risk trends, and the effectiveness of risk mitigation strategies."
+What is a Risk Mitigation Plan?,It is a plan that outlines the actions to be taken to reduce an operational risk to an acceptable level.
+What is a Business Continuity Plan (BCP)?,It is a plan designed to ensure that essential business functions can continue during and after a disruption.
+What is the purpose of a Recovery Time Objective (RTO)?,The purpose is to define the maximum acceptable downtime for a specific business function or system in the event of a disruption.
+What is a Recovery Point Objective (RPO)?,It is the maximum tolerable period in which data might be lost due to a major catastrophe or equipment failure.
+What is a DR Site (Disaster Recovery Site)?,It is a secondary location where critical business operations can be continued in the event of a disruption at the primary site.
+What is the role of a Risk Management Policy?,The role is to provide guidance on the management of operational risks within an organization.
+What is a Risk Map?,"It is a visual representation of an organization's key operational risks, their interconnections, and potential impact."
+What is a Control Matrix?,"It is a document that lists all the controls in place to mitigate operational risks, along with their owners and the frequency of review."
+What is a Risk Appetite and Tolerance Framework?,"It is a structured approach to defining, communicating, and managing an organization's risk appetite and tolerance levels."
+What is the purpose of a Risk Committee in Operational Risk Governance?,"The purpose is to oversee operational risk management activities, provide recommendations to senior management, and ensure that operational risks are managed effectively."

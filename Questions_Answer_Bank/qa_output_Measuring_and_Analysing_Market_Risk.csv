@@ -1,0 +1,31 @@
+Question,Answer
+What is market risk?,Market risk refers to the potential financial loss an investment may experience due to fluctuations in market conditions.
+Can market risk be measured quantitatively?,"Yes, market risk can be quantified using statistical methods like Value-at-Risk (VaR) and Conditional Value-at-Risk (CVaR)."
+What is VaR?,VaR is a statistical method that estimates the maximum loss an investment could experience over a given time period with a specified level of confidence.
+How is CVaR different from VaR?,"CVaR, also known as Expected Shortfall (ES), measures the average loss beyond the VaR threshold."
+What are some factors affecting market risk?,"Factors include interest rates, inflation, foreign exchange rates, equity prices, and changes in government policies."
+What is the difference between systematic risk and unsystematic risk?,"Systematic risk, also known as market risk, cannot be diversified away because it affects all securities in a similar way, while unsystematic risk is specific to individual investments and can be eliminated through diversification."
+What is Beta in the context of market risk?,Beta is a measure of an asset's sensitivity to market movements. It indicates how much an asset's price will move compared to the overall market.
+How can Portfolio beta be calculated?,Portfolio beta can be calculated by weighting each asset's beta in the portfolio according to its proportion and summing up the results.
+What is a risk budget?,"A risk budget is a plan that outlines the acceptable level of risk for an investment portfolio based on an investor's risk tolerance, financial goals, and time horizon."
+How can risk budget be used in managing market risk?,"By setting a risk budget, investors can control the amount of systematic risk they are exposed to while still achieving their desired investment objectives."
+What is a stop-loss order?,A stop-loss order is an instruction to sell a security when it reaches a specific price level to limit potential losses.
+How can a stop-loss order help in managing market risk?,"By setting a stop-loss order, investors can minimize their losses during adverse market conditions and protect their capital."
+What is an options strategy used for managing market risk?,Covered call writing is a strategy where an investor sells call options on a stock they own to generate income while simultaneously limiting potential gains.
+How does covered call writing help in managing market risk?,"By selling call options, investors can earn premium income and potentially limit their upside exposure during bullish markets."
+What is a put option?,A put option gives the buyer the right to sell a security at a specified price (strike price) before a specific date (expiration date).
+How can a put option help in managing market risk?,"By buying a put option, investors can protect themselves against potential losses in bearish markets by locking in a minimum selling price for their securities."
+What is correlation in the context of market risk?,"Correlation measures the degree to which two assets' returns move together. A correlation of 1 indicates perfect positive correlation, while a correlation of -1 indicates perfect negative correlation."
+How can understanding correlation help in managing market risk?,"By analyzing the correlation between investments, investors can construct portfolios that are well-diversified and less exposed to systemic risks."
+What is diversification in the context of market risk management?,Diversification refers to the practice of allocating capital across a wide range of assets to minimize exposure to any single asset's risk while maximizing returns.
+How can diversification help in managing market risk?,"By reducing the correlation between investments, diversification helps investors achieve smoother returns and lower overall portfolio risk."
+What is a hedge fund?,"A hedge fund is an investment vehicle that uses various strategies to generate positive returns while managing market risk through diversification, short selling, and the use of complex financial instruments."
+How do hedge funds manage market risk differently from traditional mutual funds?,"Hedge funds have more flexibility in terms of asset classes, investment styles, and risk management techniques compared to traditional mutual funds."
+What is a long/short strategy?,A long/short strategy involves buying undervalued securities while simultaneously selling overvalued ones to generate profits from both rising and falling markets.
+How can a long/short strategy help in managing market risk?,"By balancing long and short positions, investors can potentially profit from market trends while minimizing overall portfolio volatility."
+What is an arbitrage opportunity?,An arbitrage opportunity occurs when there is a price discrepancy between related assets or markets that allows for risk-free profits by buying the undervalued asset and selling the overvalued one simultaneously.
+How can arbitrage help in managing market risk?,"By exploiting temporary price discrepancies, investors can generate returns without taking on significant market risk."
+What is a risk-adjusted return?,A risk-adjusted return measures an investment's performance in relation to the amount of risk taken on. It helps investors compare different investments based on both their returns and their level of risk.
+How can risk-adjusted returns help in managing market risk?,"By focusing on risk-adjusted returns, investors can make informed decisions about which investments offer the best combination of potential gains and acceptable levels of risk."
+What is stress testing in the context of market risk management?,Stress testing involves analyzing an investment's performance under various adverse market conditions to assess its resilience and identify potential vulnerabilities.
+How can stress testing help in managing market risk?,"By subjecting portfolios to different scenarios, investors can better understand their exposure to market risks and take appropriate measures to mitigate potential losses."

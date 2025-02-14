@@ -1,0 +1,31 @@
+Question,Answer
+What is Operational Risk?,Operational Risk refers to the risk of loss due to internal or external factors not directly related to financial risks.
+What are the sources of operational risk?,"Sources include people, processes, systems, and external events."
+How is operational risk quantified?,Operational Risk is typically quantified using models like Value at Risk (VaR) or Expected Shortfall (ES).
+What is the difference between VaR and ES?,"VaR gives the maximum loss expected to be exceeded with a given probability in a specified time period, while ES provides the average loss beyond that VaR value."
+What is Scenario Analysis in operational risk?,Scenario Analysis involves assessing the impact of specific events or situations on operational risk.
+What is Stress Testing in operational risk?,Stress Testing simulates extreme but plausible events to measure their potential impact on operational risk.
+What is Loss Data Analysis in operational risk?,Loss Data Analysis involves collecting and analyzing data on historical losses to identify trends and patterns.
+What is Key Risk Indicator (KRI)?,A Key Risk Indicator is a measure that monitors the level or trend of an operational risk.
+What is the role of KRIs in operational risk management?,"KRIs help to identify, monitor, and manage operational risks effectively."
+What is Risk Appetite?,Risk Appetite refers to the amount and type of risk a business is willing to accept in pursuit of its strategic objectives.
+What is the difference between Risk Tolerance and Risk Capacity?,"Risk Tolerance is the level of variability in returns that an entity can withstand without being uncomfortable, while Risk Capacity is the level of risk that can be sustained without jeopardizing solvency."
+What is a Risk Limit?,A Risk Limit sets the maximum amount of risk that can be taken in a specific area or for a particular event.
+What is a Risk Mitigation Strategy?,"A Risk Mitigation Strategy is a plan to reduce, avoid, or transfer operational risks."
+What is the role of a control framework in operational risk management?,"A control framework sets out policies, procedures, and controls to manage operational risks effectively."
+What is a Control Self-Assessment (CSA)?,CSA is a process where employees assess the effectiveness of the controls within their area of responsibility.
+What is the purpose of an Operational Risk Assessment?,"An Operational Risk Assessment identifies, evaluates, and prioritizes operational risks to develop appropriate mitigation strategies."
+What is a Risk Matrix?,A Risk Matrix plots the likelihood of an event occurring against the potential impact to help prioritize risks.
+What is the purpose of an Enterprise-wide Risk Assessment (EWA)?,An EWA assesses operational risks across an organization to identify interdependencies and systemic risks.
+What is the role of a Risk Management Policy in operational risk management?,"A Risk Management Policy sets out the principles, guidelines, and procedures for managing operational risks within an organization."
+What is a Risk Map?,A Risk Map visualizes the interconnections between various risks within an organization.
+What is the purpose of a Risk Management Framework?,"A Risk Management Framework provides a structured approach to identify, assess, and manage operational risks."
+What is the role of a Risk Committee in operational risk management?,"A Risk Committee oversees the risk management process, ensures compliance with policies and regulations, and makes strategic decisions related to risk."
+What is the purpose of a Risk Appetite Statement (RAS)?,An RAS communicates the organization's risk appetite and risk tolerance levels to stakeholders.
+What is a Key Control?,"A Key Control is a critical process, policy, or procedure that helps manage operational risks effectively."
+What is the purpose of an Internal Control System (ICS)?,"An ICS ensures that business processes are carried out efficiently, reliably, and effectively to manage operational risks."
+What is a Risk Event?,A Risk Event is any occurrence that could have or has had an adverse impact on operational risk.
+What is the purpose of a Loss Database?,"A Loss Database stores data on historical losses, helping to identify trends and patterns in operational risks."
+What is a Risk Heat Map?,"A Risk Heat Map visualizes risks based on their likelihood and impact, helping to prioritize risk management efforts."
+What is the purpose of a Risk Dashboard?,"A Risk Dashboard provides a clear, concise view of operational risks across an organization."
+What is the role of a Risk Officer in operational risk management?,"A Risk Officer oversees the risk management process, ensures compliance with policies and regulations, and communicates risk-related information to stakeholders."
