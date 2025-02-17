@@ -1,0 +1,1 @@
+Table to select period for time intelligence functions for [[Calendar Global]]

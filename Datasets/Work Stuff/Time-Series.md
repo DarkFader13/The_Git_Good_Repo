@@ -1,0 +1,1 @@
+Create bins for time period and connect to [[Fact Table]], used for stats such as Median, IQR, Quartile, Percentiles, Outliers
