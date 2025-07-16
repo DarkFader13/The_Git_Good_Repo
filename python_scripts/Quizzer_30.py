@@ -34,9 +34,13 @@ def generate_qa(markdown_file, num_questions, focus_topic, output_folder):
         f"Generate {num_questions} questions and answers based on the following notes. "
         f"Focus the questions on the topic of '{focus_topic}'. "
         "Each question should be a maximum of 2 sentences, and each answer should be less than 50 words. "
+        "Do NOT return JSON or structured formats. Just list the Q&A like:\n"
+        "FORMAT STRICTLY like this (no intro, no numbering):\n"
+        "Question: ...\nAnswer: ...\nQuestion: ...\nAnswer: ...\n\n"
         f"Format the output as a list of questions and answers pairs, with {num_questions} pairs"
         "Here are the notes:\n\n{notes}"
     )
+    #Might need to update prompt with future updates
 
     # Run Ollama with Mistral 7B to generate Q&A
     result = subprocess.run(
