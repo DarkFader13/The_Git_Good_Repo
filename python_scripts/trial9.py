@@ -78,10 +78,10 @@ if __name__ == "__main__":
     ollama_process = start_ollama()
     try:
         # Inputs
-        markdown_file = "/workspaces/personal_projects/Datasets/Risk_Management/Operational Risk.md" ##input("Enter the path to your Markdown file (e.g., notes.md): ")
+        markdown_file = "/workspaces/The_Git_Good_Repo/Datasets/Risk_Management/Operational Risk.md" ##input("Enter the path to your Markdown file (e.g., notes.md): ")
         num_questions = 3 ##input("Enter the number of questions to generate: ")
         focus_topic = "Risk" ##input("Enter the topic to focus on for the questions: ")
-        output_folder = "/workspaces/personal_projects/Questions_Answer_Bank" ##input("Enter the folder to save the output CSV file (e.g., output): ")
+        output_folder = "/workspaces/The_Git_Good_Repo/Questions_Answer_Bank" ##input("Enter the folder to save the output CSV file (e.g., output): ")
 
         # Generate Q&A
         generate_qa(markdown_file, int(num_questions), focus_topic, output_folder)
