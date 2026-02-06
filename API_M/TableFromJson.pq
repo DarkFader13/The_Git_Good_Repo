@@ -1,44 +1,68 @@
-(Table as text, optional Fields as text, optional Filters as text) =>
+(Endpoint as text, optional Fields as text, optional QueryText as text) =>
 let
-    // Step 1: Get total record count
-    StatsSource = Json.Document(Web.Contents(ServiceNowApi,
-        [RelativePath="api/now/stats/" & Table,
-        Query=[sysparm_count="true"]
-    ])),
-    StatsResult = StatsSource[result],
-    StatsCount = Number.FromText(StatsResult[stats][count]),
-    Iterations = Number.RoundUp(StatsCount / 1000),
+    Limit = if RowLimit = null then -1 else RowLimit,
 
-    // Step 2: Apply RowLimit cap if provided
-    LimitIterations = if RowLimit <> -1 then Number.RoundUp(RowLimit / 1000) else Iterations,
-    FinalIterations = if LimitIterations < Iterations then LimitIterations else Iterations,
+    // --- Parse QueryText JSON into a record ---
+    QueryRecord =
+        if QueryText <> null and Text.Length(QueryText) > 0
+        then try Json.Document(QueryText) otherwise null
+        else null,
 
-    // Step 3: Generate list of iteration numbers
-    IterationList = List.Numbers(1, FinalIterations, 1),
+    // --- Fetch first page to get pagination ---
+    FirstPageQuery =
+        if QueryRecord <> null then Record.AddField(QueryRecord, "page", "1")
+        else [page="1"],
 
-    // Step 4: Fetch data for each iteration
-    FetchPage = (Iteration as number) =>
+    FirstPage =
+        Json.Document(
+            Web.Contents(
+                API_Web,
+                [RelativePath = "v4/" & Endpoint, Query = FirstPageQuery]
+            )
+        ),
+
+    PageMeta = try FirstPage[pagination] otherwise [last_visible_page=1],
+    LastPage = PageMeta[last_visible_page],
+
+    Iterations =
+        if Limit <> -1 and Number.RoundUp(Limit / 25) < LastPage
+        then Number.RoundUp(Limit / 25)
+        else LastPage,
+
+    IterationList = List.Numbers(1, Iterations),
+
+    // --- Fetch each page ---
+    FetchPage = (PageNum as number) =>
         let
-            PageSource = Json.Document(Web.Contents(ServiceNowApi,
-                [RelativePath="api/now/table/" & Table,
-                Query=[
-                    sysparm_offset = Number.ToText((Iteration - 1) * 1000),
-                    sysparm_limit = "1000",
-                    sysparm_display_value = "true"
-                ] 
-                & (if Fields <> null and Text.Length(Fields) > 0 then [ sysparm_fields = Fields ] else [])
-                & (if Filters <> null and Text.Length(Filters) > 0 then [ sysparm_query = Filters ] else [])
-            ])),
-            PageResult = try PageSource[result] otherwise {},
-            PageTable = if Value.Is(PageResult, List.Type) then Table.FromRecords(PageResult) else #table({}, {})
+            PageQuery =
+                if QueryRecord <> null
+                then Record.AddField(QueryRecord, "page", Number.ToText(PageNum))
+                else [page = Number.ToText(PageNum)],
+
+            PageSource =
+                Json.Document(
+                    Web.Contents(
+                        API_Web,
+                        [RelativePath = "v4/" & Endpoint, Query = PageQuery]
+                    )
+                ),
+
+            PageResult = try PageSource[data] otherwise {},
+            PageTable =
+                if Value.Is(PageResult, List.Type)
+                then Table.FromRecords(PageResult)
+                else #table({}, {})
         in
             PageTable,
 
-    // Step 5: Combine all pages
     AllPages = List.Transform(IterationList, each FetchPage(_)),
-    CombinedTable = Table.Combine(AllPages),
+    Combined = Table.Combine(AllPages),
 
-    // Step 6: Apply row limit if provided
-    Result = if RowLimit <> -1 then Table.FirstN(CombinedTable, RowLimit) else CombinedTable
+    Limited = if Limit <> -1 then Table.FirstN(Combined, Limit) else Combined,
+
+    Result =
+        if Fields <> null and Text.Length(Fields) > 0
+        then Table.SelectColumns(Limited, Text.Split(Fields, ","))
+        else Limited
 in
     Result
